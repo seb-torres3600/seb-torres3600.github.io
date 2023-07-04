@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-<html>
 <head>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
@@ -62,22 +60,6 @@
             user-select: none;
         }
 
-        /* On hover, add a black background color with a little bit see-through
-        .prev:hover, .next:hover {
-          background-color: rgba(0,0,0,0.8);
-        }
-        */
-        /* Caption text */
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
-
         /* Number text (1/3 etc) */
         .numbertext {
             color: #f2f2f2;
@@ -97,10 +79,6 @@
             border-radius: 50%;
             display: inline-block;
             transition: background-color 0.6s ease;
-        }
-
-        .active, .dot:hover {
-            background-color: #717171;
         }
 
         /* Fading animation */
@@ -131,7 +109,7 @@
 
         /* On smaller screens, decrease text size */
         @media only screen and (max-width: 300px) {
-            .prev, .next, .text {
+            .prev, .next {
                 font-size: 11px
             }
         }
@@ -157,63 +135,7 @@
 </head>
 <body>
 <div class="site">
-    <div class="sidebar" id="sidebar">
-        <div class="header ">
-            <div class="logoBlocks">
-                <a href="/">
-                    <div class="hvr-buzz-out">
-                        <div id="logoimage">
-                            <img id="logo" src="/images/logo.png">
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <span class="tagline">Hi, I'm Sebastian Torres. <br/>I am a developer from Denver, CO. <br/> Currently located in Seattle, WA</span>
-            <button onclick="javascript:openDialog();" class="btn btn-4">About Me</button>
-            <a href="images/Sebastian_Torres_Resume.pdf" download="Sebastian_Torres_Resume.pdf">
-                <button class="btn btn-4">Download Resume</button>
-            </a>
-        </div>
-        <div class="footer">
-
-<span id="footer-links">
-<a target="_blank" href="https://www.linkedin.com/in/sebastian-torres-dominguez-68aab21ab"
-   class="footer-link hvr-underline-reveal">
-<i class="fa fa-linkedin"></i> LinkedIn
-</a>
-<span class="separator">&bull;</span>
-<a target="_blank" href="https://github.com/seb-torres3600" class="footer-link hvr-underline-reveal">
-<i class="fa fa-github-alt"></i> GitHub
-</a>
-<span class="separator">&bull;</span>
-<a target="_blank" href="https://www.hackerrank.com/seb_torres3600" class="footer-link hvr-underline-reveal">
-<i class="fab fa-hackerrank"></i> Hacker Rank
-</a>
-</span>
-        </div>
-        <div class="posts">
-            <ul class="posts-list">
-
-                <li class="post-link">
-                    <a class="post-title hvr-float" href="/posts/logos.html">
-                        <span class="post-date">20 Nov 2021</span>
-                        IOS App
-                    </a>
-                </li>
-                <li class="post-link">
-                    <a class="post-title hvr-float" href="/posts/logos.html">
-                        <span class="post-date">15 Aug 2021</span>
-                        WebServer
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
     <div class="content" id="home">
-        <div id="sidebar-button">
-            <img src="/images/sidebar-button.png">
-        </div>
         <div id="post-info">
             <div id="cover-photo-container">
                 <div class="slideshow-container">
@@ -257,18 +179,18 @@
             <h3 id="tldr">Work In Progress</h3>
             <p>Logos Jiu Jitsu, is the academy where I train. If you're ever in Denver it is the place to be, checkout
                 their
-                <a href="https://logosjiujitsu.com">website</a>
+                <a href="https://logosjiujitsu.com" target="_blank" rel="noopener noreferrer">website</a>
                 for more information. The academy is relatively new so most of its operations are done on pen and paper.
             </p>
             <p>As a fun project, I decided to create a IOS app that would allow the business aspect of a martial arts
                 academy to be a lot easier.</p>
-            <h3 id="why-i-built-a-cli-for-food52">What it does?</h3>
+            <h3 id="why-i-built-logos-app">What it does?</h3>
             <p></p>
             <p>The app makes the business aspect of an academy easier. It has the ability to sign in, once logged in you
                 get the ability to
                 add new members to the academy, check in people, and retrieve the information of members.
             </p>
-            <h3 id="why-i-built-a-cli-for-food52">What is it built with?</h3>
+            <h3 id="what-i-built-logos-app-with">What is it built with?</h3>
             <p>IOS apps have the ability to made in Swift or Objective-C. With this being my first attempt at building a
                 mobile app I decided that Swift would
                 make my life easier. I needed a way to securely hold information, with maybe potentially wanting to
@@ -277,7 +199,7 @@
                 Apple's CloudKit. The sign-in authentication is also handled
                 by Firebase to give access to the application.
             </p>
-            <h3 id="why-i-built-a-cli-for-food52">Features</h3>
+            <h3 id="logos-features">Features</h3>
             <br> - Sign Up New members </br>
             <br> - Allow Members to Check In for Class </br>
             <br> - Get a List of Members </br>
@@ -285,7 +207,7 @@
             <br> - Get Average Number of Members per Class for the Month </br>
             <br> - Get Number of Members per Class for the Day </br>
 
-            <h3 id="why-i-built-a-cli-for-food52">Features Being Worked On</h3>
+            <h3 id="logos-features-in-progress">Features Being Worked On</h3>
             <br> - Create PDF Contract from New Member Info </br>
             <br> - Make Offline Use of App </br>
             <br> - Make Code Easier to Maintain</br>
@@ -301,100 +223,6 @@
         </div>
     </div>
 </div>
-
-<div id="termWindow">
-    <div id="sebas-about" class="avgrund-popup">
-        <div id="termHeader" class="dragHandle">
-            <a onclick="javascript:closeDialog();">
-                <div id="termIcons"></div>
-            </a>
-        </div>
-        <div id="termBody" class="custom-scroll">
-            <p class="termText">
-                Last updated: Sat Jun 10 17:29:48 on ttys000
-                <br/>seb-torres3600@Sebastian--Torres-MacBook-Pro:~ % cd Documents
-                <br/>seb-torres3600@Sebastian--Torres-MacBook-Pro:~ % cat myBio.txt
-                <br/>
-                <br/> Name: Sebastian Torres
-                <br/>
-                <br/> Job: System Dev Engineer at AWS
-                <br/>
-                <br/> Education: BS in Computer Science from University of Colorado - Boulder
-                <br/>
-                <br/>About
-                <br/>------
-                <br/> I'm a software developer from Denver, Colorado. In my free time I enjoy going to the movie theaters, cooking,
-                and training Brazilian Jiu Jitsu.
-                <br/>
-                <br/>Skills
-                <br/>-------
-                <br/> C++, C, Python, Java, Git, Unix, ChefDk, Vim, Problem Solving
-                <br/>
-                <br/>
-            </p>
-            <p class="termText left">
-                Other Interests
-                <br/>----------------
-                <br/>- Jiu Jitsu
-                <br/>- Movies
-                <br/>- Cars
-                <br/>- Combat Sports
-            </p>
-            <p class="termText right">
-                Links
-                <br/>------
-                <br/>Email: <a href="mailto: seb.torres3600@gmail.com">seb.torres3600@gmail.com </span></a>
-                <br/>Github:
-                <a target="_blank" href="https://github.com/seb-torres3600">seb-torres3600</a>
-                <br/>LinkedIn:
-                <a target="_blank" href="https://www.linkedin.com/in/sebastian-torres-dominguez-68aab21ab">Sebastian
-                    Torres</a>
-            </p>
-            <p class="termText newRow">
-                <br/> Hit red X in upper-left corner to close window
-                <br/> Or click <a onclick="javascript:closeDialog();"> HERE </a>to close window
-            </p>
-            <p class="termText left">
-                seb-torres3600@Sebastian--Torres-MacBook-Pro:~ %
-            </p>
-            <div id="cursor"></div>
-        </div>
-    </div>
-</div>
-
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-59458364-1', 'auto');
-    ga('send', 'pageview');
-</script>
-
-
-<script type='text/javascript' async src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
-<script type="text/javascript" async src="/scripts/pace.js"></script>
-<script type="text/javascript" async src="/scripts/responsive.js"></script>
-<script type="text/javascript" async src="/scripts/avgrund.js"></script>
-<script>
-    function openDialog() {
-        Avgrund.show("#sebas-about");
-    }
-
-    function closeDialog() {
-        Avgrund.hide();
-    }
-</script>
 
 <script>
     var slideIndex = 1;

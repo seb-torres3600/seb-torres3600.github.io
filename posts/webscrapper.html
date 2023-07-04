@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next {
+        font-size: 11px
+      }
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/44c17533e5.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="https://i.imgur.com/XAC1eMO.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sebastian - Home</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/hover.css">
+  <link rel="stylesheet" href="/css/rrssb.css">
+
+  <link rel="stylesheet" href="/css/responsive.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Vesper+Libre:900" rel="stylesheet">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="site">
+  <div class="content" id="home">
+    <div id="post-info">
+      <div id="cover-photo-container">
+        <img src="/images/zillow.png" style="width:90%"></img>
+      </div>
+      <div id="info-container">
+        <h1 id="title">Zillow Web Scrapper</h1>
+        <span id="date">15 Dec 2022</span>
+      </div>
+    </div>
+    <div class="post">
+      <a id="github-link" href="https://github.com/seb-torres3600/Zillow_Scrapper/tree/main">GITHUB CODE</a>
+      <h3 id="what-web-scrapper-does">What it does?</h3>
+      <p></p>
+      <p>
+        The purpose of this project is exactly what the title implies. It is a web scrapper for the Zillow website. This
+        project was created as part of a larger project for my Data Mining class first semester senior year. The overall
+        project was intended to find patterns regarding crime vs social economic status. The best way we found was to use
+        house prices in our target neighborhoods as they were a representation of income in those neighborhoods. That is
+        where this project came in, we needed to get our data first, I created a web scrapper that got houses for sale in
+        the Denver area, we pulled address, neighborhood, and the current price of the house. What we also needed was historical
+        data, I managed to pull Zillow estimates for the houses throughout the years.
+      </p>
+      <h3 id="what-i-built-zillow-scrapper-with">What is it built with?</h3>
+      <p>
+        This scrapper was built in Python, with the requests package, and selenium with the firefox option.
+      </p>
+      <h3 id="how-zillow-scrapper-works">How it works?</h3>
+      <p>
+        <br>The first step was to get a list of Zillow website urls that represent about 50 houses each.</br>
+        <br>The second step is to get the html code for each of those urls and add relevant information to a csv file.</br>
+        <br>The third step is grabbing the individual url for the specific houses to get more specific information on them.</br>
+        <br>All this data is added to a csv file that we later processed and refined.</br>
+      </p>
+    </div>
+    <div class="colophon">
+      <p>
+        <span id="pub-date">Published on 15 Dec 2022</span>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

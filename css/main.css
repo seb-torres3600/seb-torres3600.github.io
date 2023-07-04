@@ -131,7 +131,6 @@ a:hover {
     width: 100%;
     color: #787878;
     font-weight: 600;
-    text-align: left;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     display: block;
@@ -150,7 +149,6 @@ a:hover {
     padding-top: 1.25em;
     padding-bottom: 0em;
     overflow: hidden;
-    float: center;
     text-align: center;
 }
 
@@ -172,9 +170,14 @@ a:hover {
     color: #787878;
 }
 
-#cover-photo-container,
+#cover-photo-container {
+    display: inline-block;
+}
+
 #info-container {
-    display: block;
+    display: inline-block;
+    padding-top: 3em;
+    padding-right: 3em;
 }
 
 #info-container {
@@ -287,12 +290,11 @@ code {
     float: left;
     width: 20%;
     padding-left: 4em;
-    padding-right: 2.125em;
     border-right: 1px solid #e7e7e7;
 }
 
 .content {
-    padding-left: 2.125em;
+    padding-right: 2.125em;
 }
 
 .header {
@@ -322,7 +324,7 @@ code {
 }
 
 #sidebar-button {
-    height: intrinsic;
+    height: auto;
     cursor: pointer;
     display: none;
     padding: 15px 5px 0px 0px;
@@ -376,15 +378,6 @@ code {
     text-align: center;
 }
 
-#jackieImage {
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../images/404.png);
-    width: 303px;
-    height: 186px;
-    background-size: 303px 186px;
-}
-
 #termHeader {
     margin-top: -20px;
     margin-left: -20px;
@@ -413,15 +406,6 @@ code {
     background-image: url(../images/termIconsHover.png);
     background-size: 52px 12px;
     cursor: default;
-}
-
-#cursor {
-    background-image: url(../images/blink.gif);
-    margin-left: -5px;
-    margin-bottom: -2px;
-    width: 7px;
-    height: 14px;
-    display: inline-block;
 }
 
 .termText {
@@ -462,7 +446,6 @@ code {
     margin-left: 38%;
     margin-top: 4px;
     display: inline-block;
-    float: auto;
 }
 
 #termBody {
@@ -797,4 +780,3 @@ span.goalAmount {
     -o-transition: none;
     transition: none;
 }
-
