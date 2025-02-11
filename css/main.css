@@ -17,6 +17,17 @@ h2 {
     font-size: 5em;
 }
 
+/*
+/* TODO: REMOVE THIS AS IT'S TEMPORARY
+*/
+.content,
+.middle {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Ensures text inside is centered */
+}
+
 #superLines {
     margin-top: -50px;
     margin-bottom: -127px;
@@ -336,7 +347,6 @@ code {
 #sidebar-button:hover {
     opacity: 0.7;
 }
-
 
 /*****************************************************************************/
 
